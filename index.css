@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2 !important;
+}
+
+.container {
+    padding: 20px 0;
+    margin-top: 20px;
+    align-content: center;
+    max-width: 90%;
+}
+
+.profile_photo {
+    max-width: 200px;
+}
+
+.bio {
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+.container hr {
+    margin-top: 50px;
+    width: 90%;
+}
+
+.container .title-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content {
+    margin-top: 25px;
+}
+
+.content .card {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.content .card .card-body {
+    text-align: justify;
+}
+
+.content .box-repo {
+    margin-top: 50px;
+}
+
+.content .content-repo {
+    text-align: justify;
+}
+
+.content .content-repo div {
+    margin-top: 25px;
+}
+
+.content .content-form {
+    text-align: start;
+    margin-top: 40px;
+}
+
+.content .content-form form div input {
+    width: 100%;
+}
+
+.content .content-form .center- {
+    align-items: center;
+}
+
+.content .content-form form button {
+    margin-left: 20px;
+}
