@@ -1,77 +1,47 @@
-* {
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f2f2f2 !important;
-}
-
-.container {
-    padding: 20px 0;
-    margin-top: 20px;
-    align-content: center;
-    max-width: 90%;
+:root {
+  --jumbotron-padding-y: 3rem;
 }
 
 .profile_photo {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .bio {
-    margin-top: 25px;
-    text-align: center;
-    font-style: italic;
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
 }
 
-.container hr {
-    margin-top: 50px;
-    width: 90%;
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
 }
 
-.container .title-section {
-    text-align: center;
-    margin-top: 50px;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-.content {
-    margin-top: 25px;
+.jumbotron-heading {
+  font-weight: 300;
 }
 
-.content .card {
-    background-color: #f2f2f2;
-    border: none;
+.jumbotron .container {
+  max-width: 40rem;
 }
 
-.content .card .card-body {
-    text-align: justify;
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.content .box-repo {
-    margin-top: 50px;
-}
-
-.content .content-repo {
-    text-align: justify;
-}
-
-.content .content-repo div {
-    margin-top: 25px;
-}
-
-.content .content-form {
-    text-align: start;
-    margin-top: 40px;
-}
-
-.content .content-form form div input {
-    width: 100%;
-}
-
-.content .content-form .center- {
-    align-items: center;
-}
-
-.content .content-form form button {
-    margin-left: 20px;
+footer p {
+  margin-bottom: .25rem;
 }
