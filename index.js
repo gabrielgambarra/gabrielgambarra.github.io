@@ -28,7 +28,7 @@ function openGithubLink(repo) {
 function openGithubPage(repo) {
     switch (repo) {
         case 'instarocket':
-            window.open('https://github.com/gabrielgambarra/semana-omnistack7');
+            window.open('https://gabrielgambarra.github.io/semana-omnistack7/');
             break;
 
         case 'tindev':
