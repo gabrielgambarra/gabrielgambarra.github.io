@@ -16,6 +16,10 @@ function openGithubLink(repo) {
             window.open('https://github.com/gabrielgambarra/leaflet-example');
             break;
 
+        case 'crud-php':
+            window.open('https://github.com/gabrielgambarra/crud_php');
+            break;
+
         default:
             break;
     }
@@ -37,6 +41,10 @@ function openGithubPage(repo) {
 
         case 'leaflet-example':
             window.open('https://gabrielgambarra.github.io/leaflet-example/dist/leaflet-example/');
+            break;
+
+        case 'crud-php':
+            window.open('https://basic-php-crud.herokuapp.com/');
             break;
 
         default:
