@@ -36,11 +36,11 @@ function openGithubPage(repo) {
             break;
 
         case 'angular-infinite-scroll':
-            window.open('https://gabrielgambarra.github.io/infinite-scroll-cdk/dist/infinite-scroll-cdk/');
+            window.open('https://gabrielgambarra.github.io/infinite-scroll-cdk/');
             break;
 
         case 'leaflet-example':
-            window.open('https://gabrielgambarra.github.io/leaflet-example/dist/leaflet-example/');
+            window.open('https://gabrielgambarra.github.io/leaflet-example/');
             break;
 
         case 'crud-php':
