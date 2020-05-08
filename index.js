@@ -3,9 +3,16 @@ window.alert("This site is being built. Many other things will be available as s
 const hamburguer = document.querySelector('.hamburguer');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
+var isOpened = false;
 
 hamburguer.addEventListener('click', () => {
+    isOpened = !isOpened;
     navLinks.classList.toggle('open');
+    if (isOpened) {
+        document.body.style.position = 'fixed';
+    } else {
+        document.body.style.position = 'unset';
+    }
 });
 
 links.forEach(link => {
