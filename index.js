@@ -1,4 +1,4 @@
-// window.alert("This site is being built. Many other things will be available as soon as possible.")
+window.alert("This site is being built. Many other things will be available as soon as possible.")
 
 const hamburguer = document.querySelector('.hamburguer');
 const navLinks = document.querySelector('.nav-links');
