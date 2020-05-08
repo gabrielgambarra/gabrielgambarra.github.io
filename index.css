@@ -23,20 +23,7 @@ nav {
   background: #272727;
   position: absolute;
   width: 100%;
-}
-
-nav .nav-title {
-  display: flex;
-  width: 65%;
-  height: 100%;
-  align-items: center;
-  float: left;
-}
-
-nav .nav-title h2 {
-  padding-left: 7vw;
-  color: #fff;
-  font-weight: normal;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 nav .hamburguer {
@@ -74,6 +61,13 @@ nav .nav-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+nav .nav-links li a:hover, nav .nav-links li aacvite {
+  border-bottom: 2px solid #caba6d;
 }
 
 nav .open {
@@ -139,6 +133,24 @@ nav .open {
   margin: 4vh auto 0 auto;
 }
 
+.container-subheader .social-media a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+  transition: box-shadow 0.3s;
+}
+
+.container-subheader .social-media a:hover {
+  box-shadow: 2px 4px 6px 0 rgba(140, 140, 140, 0.5);
+}
+
+.container-subheader .social-media a:active {
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .container-subheader .social-media .icon {
   width: 30px;
 }
@@ -191,24 +203,24 @@ nav .open {
   text-align: justify;
 }
 
-.container-newsletter {
+.container-curriculum {
   padding: 0 15px 0 15px;
 }
 
-.container-newsletter p {
+.container-curriculum p {
   text-align: center;
   margin-bottom: 3vh;
 }
 
-.container-newsletter h2 {
+.container-curriculum h2 {
   padding: 5vh 0;
 }
 
-.container-newsletter .container-inputs {
+.container-curriculum .container-inputs {
   width: 100%;
 }
 
-.container-newsletter .container-inputs input {
+.container-curriculum .container-inputs input {
   margin: 10px 0 10px 0;
   width: 100%;
   border: unset;
@@ -221,21 +233,21 @@ nav .open {
   transition: box-shadow 0.3s;
 }
 
-.container-newsletter .container-inputs input::placeholder {
+.container-curriculum .container-inputs input::placeholder {
   color: #8C8C8C;
   font-size: 14px;
 }
 
-.container-newsletter .container-inputs input:hover, .container-newsletter .container-inputs input:focus {
+.container-curriculum .container-inputs input:hover, .container-curriculum .container-inputs input:focus {
   box-shadow: 2px 4px 6px 0 rgba(140, 140, 140, 0.5);
 }
 
-.container-newsletter .container-button {
+.container-curriculum .container-button {
   text-align: center;
   padding: 3vh;
 }
 
-.container-newsletter .container-button button {
+.container-curriculum .container-button button {
   border: none;
   color: #FFF;
   background-color: #343a40;
@@ -248,11 +260,11 @@ nav .open {
   cursor: pointer;
 }
 
-.container-newsletter .container-button button:hover {
+.container-curriculum .container-button button:hover {
   box-shadow: 2px 4px 6px 0 rgba(140, 140, 140, 0.5);
 }
 
-.container-newsletter .container-button button:active {
+.container-curriculum .container-button button:active {
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -271,9 +283,6 @@ footer {
   nav {
     height: 20vh;
     position: absolute;
-  }
-  nav .nav-title {
-    width: 50%;
   }
   nav .hamburguer {
     display: none !important;
@@ -321,11 +330,9 @@ footer {
   .container-subheader .social-media {
     width: 25% !important;
   }
-  .container-subheader .social-media .icon {
-    cursor: pointer;
-  }
   .container-portfolio {
     display: inline-block;
+    margin: 0 10vh;
   }
   .container-portfolio h2 {
     padding: 5vh 10px;
@@ -338,30 +345,30 @@ footer {
   .container-portfolio .container-card .card {
     margin-bottom: unset;
   }
-  .container-newsletter {
+  .container-curriculum {
     margin: 0 10vh;
   }
-  .container-newsletter p {
+  .container-curriculum p {
     margin-bottom: 2vh;
     font-size: 20px;
   }
-  .container-newsletter h2 {
+  .container-curriculum h2 {
     padding: 5vh 10px;
   }
-  .container-newsletter .container-inputs {
+  .container-curriculum .container-inputs {
     display: inline-block;
     text-align: center;
   }
-  .container-newsletter .container-inputs input {
+  .container-curriculum .container-inputs input {
     margin: 10px;
     width: 30vw;
     height: 5vh;
   }
-  .container-newsletter .container-inputs input::placeholder {
+  .container-curriculum .container-inputs input::placeholder {
     color: #8C8C8C;
     font-size: 15px;
   }
-  .container-newsletter .container-button button {
+  .container-curriculum .container-button button {
     width: 20vw;
     height: 5vh;
     font-size: 18px;

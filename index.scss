@@ -23,20 +23,7 @@ nav {
     background: #272727;
     position: absolute;
     width: 100%;
-
-    .nav-title {
-        display: flex;
-        width: 65%;
-        height: 100%;
-        align-items: center;
-        float: left;
-
-        h2 {
-            padding-left: 7vw;
-            color: #fff;
-            font-weight: normal;
-        }
-    }
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
     .hamburguer {
         position: absolute;
@@ -73,7 +60,15 @@ nav {
                 color: #fff;
                 text-decoration: none;
                 font-size: 16px;
+                padding: 5px 0;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s;
+
+                &:hover, &acvite {
+                    border-bottom: 2px solid #caba6d;
+                }
             }
+
         }
     }
 
@@ -139,6 +134,24 @@ nav {
         justify-content: space-around;
         margin: 4vh auto 0 auto;
 
+        a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            border-radius: 7px;
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: 2px 4px 6px 0 rgba(140, 140, 140, 0.5);
+            }
+
+            &:active {
+                box-shadow: none;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+        }
+        
         .icon {
             width: 30px;
         }
@@ -197,7 +210,7 @@ nav {
 
 }
 
-.container-newsletter {
+.container-curriculum {
     padding: 0 15px 0 15px;
 
     p {
@@ -280,9 +293,6 @@ footer {
         height: 20vh;
         position: absolute;
 
-        .nav-title {
-            width: 50%;
-        }
         .hamburguer {
             display: none !important;
         }
@@ -337,15 +347,12 @@ footer {
 
         .social-media {
             width: 25% !important;
-
-            .icon {
-                cursor: pointer;
-            }
         }
     }
 
     .container-portfolio {
         display: inline-block;
+        margin: 0 10vh;
 
         h2 {
             padding: 5vh 10px;
@@ -362,7 +369,7 @@ footer {
         }
     }
 
-    .container-newsletter {
+    .container-curriculum {
         margin: 0 10vh;
 
         p {

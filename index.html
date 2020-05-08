@@ -20,15 +20,16 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li class="desktop-only"></li>
-            <li><a href="#">Curriculum</a></li>
-            <li><a href="#">Curriculum</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
         </ul>
     </nav>
 
     <div class="container-subheader">
+        <div id="about"></div>
         <div class="subheader">
             <img src="./assets/profile-photo.jpeg" alt="Imagem de parfil" class="profile-photo">
             <h2>Gabriel Gambarra</h2>
@@ -36,16 +37,22 @@
                 Information System student, web developer and in love with everything about code.
             </p>
             <div class="social-media">
-                <img src="./vendors/icons/logo-stackoverflow.svg" alt="Stack Overflow logo" class="icon">
-                <img src="./vendors/icons/logo-github.svg" alt="Stack Overflow logo" class="icon">
-                <img src="./vendors/icons/logo-linkedin.svg" alt="Stack Overflow logo" class="icon">
+                <a href="https://stackoverflow.com/users/11562159/gabriel-gambarra" target="_blank">
+                    <img src="./vendors/icons/logo-stackoverflow.svg" alt="Stack Overflow logo" class="icon">
+                </a>
+                <a href="https://github.com/gabrielgambarra/" target="_blank">
+                    <img src="./vendors/icons/logo-github.svg" alt="Github logo" class="icon">
+                </a>
+                <a href="https://www.linkedin.com/in/gabrielgambarra/" target="_blank">
+                    <img src="./vendors/icons/logo-linkedin.svg" alt="LinkedIn logo" class="icon">
+                </a>
             </div>
         </div>
     </div>
 
     <div id="portfolio"></div>
     <div class="container-portfolio">
-        <h2>Portfólio</h2>
+        <h2>Projects</h2>
 
         <div class="container-card" onclick="location.href='./pages/projeto.html';">
             <div class="card">
@@ -157,15 +164,15 @@
 
     </div>
 
-    <div id="newsletter"></div>
-    <div class="container-newsletter">
-        <h2>Newsletter</h2>
+    <div id="curriculum"></div>
+    <div class="container-curriculum">
+        <h2>My Curriculum</h2>
 
-        <p>Receba o Newsletter dos meus novos projetos publicados!</p>
+        <p>Did you like the projects I did? Receive my CV directly to your email!</p>
 
         <div class="container-inputs">
-            <input type="text" placeholder="Digite seu nome">
-            <input type="text" placeholder="Digite seu email">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Your email">
         </div>
 
         <div class="container-button">
