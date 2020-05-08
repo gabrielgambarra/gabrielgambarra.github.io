@@ -22,7 +22,7 @@ nav {
   height: 13vh;
   background: #272727;
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 
 nav .nav-title {
